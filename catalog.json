@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.0.2-preview.9",
+  "registries": {
+    "psv": "https://npm.psvgamestudio.com/",
+    "openupm": "https://package.openupm.com"
+  },
+  "categories": [
+    { "id": "core",      "displayName": "Core" },
+    { "id": "analytics", "displayName": "Analytics" },
+    { "id": "ad",        "displayName": "Ads / Mediation" },
+    { "id": "iap",       "displayName": "In-App Purchases" },
+    { "id": "crash",     "displayName": "Crash Reporting" },
+    { "id": "debug",     "displayName": "Debug / Tools" }
+  ],
+  "packages": [
+    {
+      "id": "com.psvgamestudio.analytics",
+      "displayName": "PSV Analytics (Firebase)",
+      "registry": "psv",
+      "category": "analytics",
+      "legacyNpmIds": ["com.psv.firebase.base"],
+      "minVersion": "0.0.1-preview.3",
+      "recommendedVersion": "0.0.1-preview.3"
+    },
+    {
+      "id": "com.psvgamestudio.remoteconfig",
+      "displayName": "PSV Remote Config (Firebase)",
+      "registry": "psv",
+      "category": "core",
+      "legacyNpmIds": ["com.psv.firebase.base"],
+      "minVersion": "0.0.1-preview.2",
+      "recommendedVersion": "0.0.1-preview.2"
+    }
+  ],
+  "external": [
+    {
+      "id": "com.cleversolutions.ads.unity",
+      "displayName": "CAS Mediation",
+      "registry": "openupm",
+      "scopes": ["com.cleversolutions"],
+      "category": "ad",
+      "minVersion": "4.5.4",
+      "recommendedVersion": "4.7.0",
+      "config": [
+        { "platform": "Android", "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsAndroid.asset", "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" },
+        { "platform": "iOS",     "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsiOS.asset",     "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" }
+      ]
+    },
+    {
+      "id": "com.tenjin.sdk",
+      "displayName": "Tenjin SDK",
+      "registry": "psv",
+      "scopes": ["com.tenjin"],
+      "category": "analytics",
+      "minVersion": "1.15.14",
+      "recommendedVersion": "1.15.14"
+    },
+    {
+      "id": "com.google.firebase.analytics",
+      "displayName": "Firebase Analytics",
+      "registry": "psv",
+      "scopes": ["com.google"],
+      "category": "analytics",
+      "minVersion": "13.1.0",
+      "recommendedVersion": "13.1.0",
+      "config": [
+        { "platform": "Android", "kind": "assetFile", "fileName": "google-services.json",      "label": "google-services.json",     "help": "https://console.firebase.google.com/" },
+        { "platform": "iOS",     "kind": "assetFile", "fileName": "GoogleService-Info.plist",   "label": "GoogleService-Info.plist", "help": "https://console.firebase.google.com/" }
+      ]
+    }
+  ],
+  "overrides": {},
+  "uninstall": [
+    {
+      "legacyNpmIds": ["com.psv.unity.edm"],
+      "reason": "EDM 1.2.186 arrives transitively via com.google.firebase.app — no separate package needed."
+    }
+  ]
+}
