@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.9",
+  "catalogVersion": "0.0.2-preview.12",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -39,9 +39,15 @@
       "displayName": "CAS Mediation",
       "registry": "openupm",
       "scopes": ["com.cleversolutions"],
+      "assetMarkers": ["CleverAdsSolutions"],
       "category": "ad",
       "minVersion": "4.5.4",
       "recommendedVersion": "4.7.0",
+      "git": {
+        "packages": [
+          { "id": "com.cleversolutions.ads.unity", "url": "https://github.com/cleveradssolutions/CAS-Unity.git", "tag": "4.7.0" }
+        ]
+      },
       "config": [
         { "platform": "Android", "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsAndroid.asset", "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" },
         { "platform": "iOS",     "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsiOS.asset",     "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" }
@@ -52,15 +58,29 @@
       "displayName": "Tenjin SDK",
       "registry": "psv",
       "scopes": ["com.tenjin"],
+      "assetMarkers": ["Tenjin"],
       "category": "analytics",
       "minVersion": "1.15.14",
-      "recommendedVersion": "1.15.14"
+      "recommendedVersion": "1.15.14",
+      "git": {
+        "packages": [
+          { "id": "com.tenjin.sdk", "url": "https://github.com/CAS-Publishing/tenjin-sdk.git", "tag": "1.15.14" }
+        ]
+      }
     },
     {
       "id": "com.google.firebase.analytics",
       "displayName": "Firebase Analytics",
       "registry": "psv",
       "scopes": ["com.google"],
+      "assetMarkers": ["Firebase.Analytics"],
+      "git": {
+        "packages": [
+          { "id": "com.google.firebase.analytics", "url": "https://github.com/CAS-Publishing/firebase-analytics.git", "tag": "13.1.0" },
+          { "id": "com.google.firebase.app",       "url": "https://github.com/CAS-Publishing/firebase-app.git",       "tag": "13.1.0" },
+          { "id": "com.google.external-dependency-manager", "url": "https://github.com/CAS-Publishing/external-dependency-manager.git", "tag": "1.2.186" }
+        ]
+      },
       "category": "analytics",
       "minVersion": "13.1.0",
       "recommendedVersion": "13.1.0",

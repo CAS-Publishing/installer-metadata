@@ -1,6 +1,6 @@
 {
   "name": "com.psvgamestudio.installer.metadata",
-  "version": "0.0.2-preview.9",
+  "version": "0.0.2-preview.10",
   "displayName": "PSV Installer Metadata",
   "description": "Dynamic catalog of PSV / CAS packages managed by com.psvgamestudio.installer. Ships separately from the installer so new packages and migration rules reach clients without an installer release.",
   "unity": "2022.3",
