@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.13",
+  "catalogVersion": "0.0.2-preview.14",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -84,6 +84,8 @@
         "PlayServicesResolver",
         "Editor Default Resources/Firebase"
       ],
+      "versionType": "Firebase.VersionInfo",
+      "versionField": "SdkVersion",
       "git": {
         "packages": [
           { "id": "com.google.firebase.analytics", "url": "https://github.com/CAS-Publishing/firebase-analytics.git", "tag": "13.1.0" },
