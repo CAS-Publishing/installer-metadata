@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.12",
+  "catalogVersion": "0.0.2-preview.13",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -70,10 +70,20 @@
     },
     {
       "id": "com.google.firebase.analytics",
-      "displayName": "Firebase Analytics",
+      "displayName": "Firebase",
       "registry": "psv",
       "scopes": ["com.google"],
-      "assetMarkers": ["Firebase.Analytics"],
+      "assetMarkers": ["Firebase"],
+      "modules": [
+        { "id": "com.google.firebase.analytics",     "assetMarkers": ["Firebase.Analytics"] },
+        { "id": "com.google.firebase.remote-config", "assetMarkers": ["Firebase.RemoteConfig"] },
+        { "id": "com.google.firebase.installations", "assetMarkers": ["Firebase.Installations"] }
+      ],
+      "extraCleanupPaths": [
+        "ExternalDependencyManager",
+        "PlayServicesResolver",
+        "Editor Default Resources/Firebase"
+      ],
       "git": {
         "packages": [
           { "id": "com.google.firebase.analytics", "url": "https://github.com/CAS-Publishing/firebase-analytics.git", "tag": "13.1.0" },
