@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.14",
+  "catalogVersion": "0.0.2-preview.15",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -40,6 +40,7 @@
       "registry": "openupm",
       "scopes": ["com.cleversolutions"],
       "assetMarkers": ["CleverAdsSolutions"],
+      "assetRoots": ["CleverAdsSolutions"],
       "category": "ad",
       "minVersion": "4.5.4",
       "recommendedVersion": "4.7.0",
@@ -59,6 +60,7 @@
       "registry": "psv",
       "scopes": ["com.tenjin"],
       "assetMarkers": ["Tenjin"],
+      "assetRoots": ["Tenjin"],
       "category": "analytics",
       "minVersion": "1.15.14",
       "recommendedVersion": "1.15.14",
@@ -79,7 +81,8 @@
         { "id": "com.google.firebase.remote-config", "assetMarkers": ["Firebase.RemoteConfig"] },
         { "id": "com.google.firebase.installations", "assetMarkers": ["Firebase.Installations"] }
       ],
-      "extraCleanupPaths": [
+      "assetRoots": [
+        "Firebase",
         "ExternalDependencyManager",
         "PlayServicesResolver",
         "Editor Default Resources/Firebase"
