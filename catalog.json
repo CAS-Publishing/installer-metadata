@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.15",
+  "catalogVersion": "0.0.2-preview.16",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -61,6 +61,7 @@
       "scopes": ["com.tenjin"],
       "assetMarkers": ["Tenjin"],
       "assetRoots": ["Tenjin"],
+      "legacyManifestIds": ["com.psv.tenjin"],
       "category": "analytics",
       "minVersion": "1.15.14",
       "recommendedVersion": "1.15.14",
