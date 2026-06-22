@@ -2,6 +2,13 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.15] - 2026-06-22
+
+- Tenjin SDK pinned to PSV fork **1.15.14-psv.1** (`minVersion`/`recommendedVersion`/git `tag`):
+  PackageCache-safe iOS post-build path (`Path.GetFullPath`) + editor types moved to the
+  `TenjinEditor` namespace (drops the `Tenjin` namespace/class collision). Runtime API unchanged.
+  Registry (`com.tenjin.sdk@1.15.14-psv.1`, signed) and GitHub mirror tag both live.
+
 ## [0.0.2-preview.9] - 2026-05-27
 
 - Tenjin SDK (`com.tenjin.sdk`) recommended version pinned to **1.15.14** (was 1.16.3).
