@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.16] - 2026-06-22
+
+- **Hotfix: Tenjin pin `1.15.14-psv.1` → `1.15.14-psv.2`.** psv.1 was missing
+  `Plugins/iOS/TenjinSDK.xcframework.zip` (the iOS SDK binary) — `upm pack` silently dropped it.
+  psv.2 is re-signed via `upm sign` + `npm pack` so the binary ships; same two source patches.
+
 ## [0.0.2-preview.15] - 2026-06-22
 
 - Tenjin SDK pinned to PSV fork **1.15.14-psv.1** (`minVersion`/`recommendedVersion`/git `tag`):

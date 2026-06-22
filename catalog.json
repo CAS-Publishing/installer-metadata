@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.17",
+  "catalogVersion": "0.0.2-preview.18",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -63,11 +63,11 @@
       "assetRoots": ["Tenjin"],
       "legacyManifestIds": ["com.psv.tenjin"],
       "category": "analytics",
-      "minVersion": "1.15.14-psv.1",
-      "recommendedVersion": "1.15.14-psv.1",
+      "minVersion": "1.15.14-psv.2",
+      "recommendedVersion": "1.15.14-psv.2",
       "git": {
         "packages": [
-          { "id": "com.tenjin.sdk", "url": "https://github.com/CAS-Publishing/tenjin-sdk.git", "tag": "1.15.14-psv.1" }
+          { "id": "com.tenjin.sdk", "url": "https://github.com/CAS-Publishing/tenjin-sdk.git", "tag": "1.15.14-psv.2" }
         ]
       }
     },

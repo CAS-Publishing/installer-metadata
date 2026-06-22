@@ -1,6 +1,6 @@
 {
   "name": "com.psvgamestudio.installer.metadata",
-  "version": "0.0.2-preview.15",
+  "version": "0.0.2-preview.16",
   "displayName": "PSV Installer Metadata",
   "description": "Dynamic catalog of PSV / CAS packages managed by com.psvgamestudio.installer. Ships separately from the installer so new packages and migration rules reach clients without an installer release.",
   "unity": "2022.3",
@@ -20,6 +20,6 @@
   "repository": {
     "url": "ssh://gitlab@gitlab.psvgamestudio.xyz:9422/psvtech/prototypemodules/psv-installer-metadata.git",
     "type": "git",
-    "revision": "0d6b7c57c8f0ca9aad99f574d34611ce06995e71"
+    "revision": "8b486b3b4842f89dd5da60def0ce937cb6aaf39e"
   }
 }
