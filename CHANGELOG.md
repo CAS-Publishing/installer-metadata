@@ -2,6 +2,13 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.17] - 2026-06-22
+
+- **Tenjin `legacyAssetFiles`** — declares the SDK files the manual `.unitypackage` scatters outside
+  `Assets/Tenjin` (`BuildPostProcessor.cs`, `Dependencies.xml`, `TenjinAssetSelector/EditorPrefs/Packager.cs`),
+  each matched by name + content signature, so migrating a manual Tenjin to UPM removes them too.
+  Needs installer ≥ 0.0.1-preview.23 (which reads the field).
+
 ## [0.0.2-preview.16] - 2026-06-22
 
 - **Hotfix: Tenjin pin `1.15.14-psv.1` → `1.15.14-psv.2`.** psv.1 was missing

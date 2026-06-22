@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.18",
+  "catalogVersion": "0.0.2-preview.19",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -62,6 +62,13 @@
       "assetMarkers": ["Tenjin"],
       "assetRoots": ["Tenjin"],
       "legacyManifestIds": ["com.psv.tenjin"],
+      "legacyAssetFiles": [
+        { "name": "BuildPostProcessor.cs",  "contains": ["class BuildPostProcessor", "TenjinSDK"] },
+        { "name": "Dependencies.xml",       "contains": ["com.tenjin"] },
+        { "name": "TenjinAssetSelector.cs", "contains": ["TenjinAssetTree"] },
+        { "name": "TenjinEditorPrefs.cs",   "contains": ["TenjinEditorPrefs"] },
+        { "name": "TenjinPackager.cs",      "contains": ["TenjinPackager"] }
+      ],
       "category": "analytics",
       "minVersion": "1.15.14-psv.2",
       "recommendedVersion": "1.15.14-psv.2",
