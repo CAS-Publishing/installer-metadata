@@ -2,6 +2,15 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.18] - 2026-06-23
+
+- **Tenjin `legacyAssetFiles` — runtime scripts.** Adds signatures for the SDK's RUNTIME scripts
+  (`BaseTenjin.cs`, `Tenjin.cs`, `AndroidTenjin.cs`, `IosTenjin.cs`, `DebugTenjin.cs`,
+  `Tenjin*Integration.cs`), each matched by name + content signature. Migrating a manual Tenjin
+  install moved to a NON-standard path (e.g. `Assets/Scripts/Core/Tenjin`) now removes its scripts
+  too — previously only editor/build helpers were covered, so the runtime scripts were left behind
+  and collided with the UPM package. Needs installer ≥ 0.0.1-preview.24.
+
 ## [0.0.2-preview.17] - 2026-06-22
 
 - **Tenjin `legacyAssetFiles`** — declares the SDK files the manual `.unitypackage` scatters outside

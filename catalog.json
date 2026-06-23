@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.19",
+  "catalogVersion": "0.0.2-preview.20",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -67,7 +67,19 @@
         { "name": "Dependencies.xml",       "contains": ["com.tenjin"] },
         { "name": "TenjinAssetSelector.cs", "contains": ["TenjinAssetTree"] },
         { "name": "TenjinEditorPrefs.cs",   "contains": ["TenjinEditorPrefs"] },
-        { "name": "TenjinPackager.cs",      "contains": ["TenjinPackager"] }
+        { "name": "TenjinPackager.cs",      "contains": ["TenjinPackager"] },
+        { "name": "BaseTenjin.cs",                 "contains": ["class BaseTenjin"] },
+        { "name": "Tenjin.cs",                     "contains": ["namespace TenjinSDK", "class Tenjin"] },
+        { "name": "AndroidTenjin.cs",              "contains": ["class AndroidTenjin", "com.tenjin.android"] },
+        { "name": "IosTenjin.cs",                  "contains": ["class IosTenjin", "iosTenjinInit"] },
+        { "name": "DebugTenjin.cs",                "contains": ["class DebugTenjin", "BaseTenjin"] },
+        { "name": "TenjinCASIntegration.cs",       "contains": ["class TenjinCASIntegration"] },
+        { "name": "TenjinAdMobIntegration.cs",     "contains": ["class TenjinAdMobIntegration"] },
+        { "name": "TenjinAppLovinIntegration.cs",  "contains": ["class TenjinAppLovinIntegration"] },
+        { "name": "TenjinHyperBidIntegration.cs",  "contains": ["class TenjinHyperBidIntegration"] },
+        { "name": "TenjinIronSourceIntegration.cs","contains": ["class TenjinIronSourceIntegration"] },
+        { "name": "TenjinTopOnIntegration.cs",     "contains": ["class TenjinTopOnIntegration"] },
+        { "name": "TenjinTradPlusIntegration.cs",  "contains": ["class TenjinTradPlusIntegration"] }
       ],
       "category": "analytics",
       "minVersion": "1.15.14-psv.2",
