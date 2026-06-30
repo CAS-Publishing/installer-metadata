@@ -2,6 +2,29 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.23] - 2026-06-29
+
+- Firebase `pluginFiles` (libFirebaseCpp*.a) so migrate auto-removes the native Plugins libs (new #8).
+
+## [0.0.2-preview.22] - 2026-06-29
+
+- Mark CAS config `adFormats` so the installer offers ad-format + audience/network controls (#4.5).
+
+## [0.0.2-preview.21] - 2026-06-29
+
+- Mark CAS managerId config rows `editable` so the installer's Configuration tab can edit them inline (#2.1b).
+
+## [0.0.2-preview.20] - 2026-06-29
+
+- **CAS-ID validation hints:** declare per-platform `regex` + `hint` on the CAS `config` rows
+  (Android bundle / iOS numeric) so the installer's Welcome validation is catalog-driven.
+
+## [0.0.2-preview.19] - 2026-06-29
+
+- **CAS pin → 4.7.4:** bump CAS `recommendedVersion` and git tag from 4.7.0 to the current stable 4.7.4.
+  Aligns the hub install with CAS's own stable channel (no more pointless in-CAS update nag, #4.3) and
+  picks up CAS's signature fix, clearing the "Missing signature" warning that came from 4.7.0 (#5).
+
 ## [0.0.2-preview.18] - 2026-06-23
 
 - **Tenjin `legacyAssetFiles` — runtime scripts.** Adds signatures for the SDK's RUNTIME scripts

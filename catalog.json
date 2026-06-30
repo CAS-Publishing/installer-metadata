@@ -43,15 +43,15 @@
       "assetRoots": ["CleverAdsSolutions"],
       "category": "ad",
       "minVersion": "4.5.4",
-      "recommendedVersion": "4.7.0",
+      "recommendedVersion": "4.7.4",
       "git": {
         "packages": [
-          { "id": "com.cleversolutions.ads.unity", "url": "https://github.com/cleveradssolutions/CAS-Unity.git", "tag": "4.7.0" }
+          { "id": "com.cleversolutions.ads.unity", "url": "https://github.com/cleveradssolutions/CAS-Unity.git", "tag": "4.7.4" }
         ]
       },
       "config": [
-        { "platform": "Android", "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsAndroid.asset", "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" },
-        { "platform": "iOS",     "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsiOS.asset",     "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings" }
+        { "platform": "Android", "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsAndroid.asset", "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings", "regex": "^[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)+$", "hint": "com.company.gamename", "editable": true, "adFormats": true },
+        { "platform": "iOS",     "kind": "settingsAssetField", "assetPath": "Assets/CleverAdsSolutions/Resources/CASSettingsiOS.asset",     "field": "managerIds", "placeholder": "demo", "label": "CAS ID", "openMenu": "Assets/CleverAdsSolutions/Settings", "regex": "^[0-9]+$", "hint": "1234567890", "editable": true, "adFormats": true }
       ]
     },
     {
@@ -107,6 +107,7 @@
         "PlayServicesResolver",
         "Editor Default Resources/Firebase"
       ],
+      "pluginFiles": ["libFirebaseCppApp.a", "libFirebaseCppAnalytics.a"],
       "versionType": "Firebase.VersionInfo",
       "versionField": "SdkVersion",
       "git": {
