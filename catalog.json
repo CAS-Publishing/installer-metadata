@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.20",
+  "catalogVersion": "0.0.2-preview.21",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -118,8 +118,8 @@
         ]
       },
       "category": "analytics",
-      "minVersion": "13.1.0",
-      "recommendedVersion": "13.1.0",
+      "minVersion": "13.1.0-psv.1",
+      "recommendedVersion": "13.1.0-psv.1",
       "config": [
         { "platform": "Android", "kind": "assetFile", "fileName": "google-services.json",      "label": "google-services.json",     "help": "https://console.firebase.google.com/" },
         { "platform": "iOS",     "kind": "assetFile", "fileName": "GoogleService-Info.plist",   "label": "GoogleService-Info.plist", "help": "https://console.firebase.google.com/" }
