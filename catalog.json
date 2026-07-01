@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.0.2-preview.21",
+  "catalogVersion": "0.0.2-preview.22",
   "registries": {
     "psv": "https://npm.psvgamestudio.com/",
     "openupm": "https://package.openupm.com"
@@ -112,9 +112,9 @@
       "versionField": "SdkVersion",
       "git": {
         "packages": [
-          { "id": "com.google.firebase.analytics", "url": "https://github.com/CAS-Publishing/firebase-analytics.git", "tag": "13.1.0" },
-          { "id": "com.google.firebase.app",       "url": "https://github.com/CAS-Publishing/firebase-app.git",       "tag": "13.1.0" },
-          { "id": "com.google.external-dependency-manager", "url": "https://github.com/CAS-Publishing/external-dependency-manager.git", "tag": "1.2.186" }
+          { "id": "com.google.firebase.analytics", "url": "https://github.com/CAS-Publishing/firebase-analytics.git", "tag": "13.1.0-psv.1" },
+          { "id": "com.google.firebase.app",       "url": "https://github.com/CAS-Publishing/firebase-app.git",       "tag": "13.1.0-psv.1" },
+          { "id": "com.google.external-dependency-manager", "url": "https://github.com/CAS-Publishing/external-dependency-manager.git", "tag": "1.2.186-psv.1" }
         ]
       },
       "category": "analytics",

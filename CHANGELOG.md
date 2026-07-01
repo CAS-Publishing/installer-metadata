@@ -2,6 +2,10 @@
 
 All notable changes to this package will be documented in this file.
 
+## [0.0.2-preview.25] - 2026-07-01
+
+- Git-install path now also points Firebase/EDM at the signed `13.1.0-psv.1` / `1.2.186-psv.1` mirror tags, so the UPM and Git install methods resolve identical versions (git installs aren't signature-checked, so this is version-parity only).
+
 ## [0.0.2-preview.24] - 2026-07-01
 
 - Firebase now installs the **signed** `13.1.0-psv.1` tarballs (app/analytics/installations/remote-config + transitive EDM `1.2.186-psv.1`) so Unity 6.3 (6000.3+) no longer flags the Firebase family as unsigned. `minVersion`/`recommendedVersion` bumped to `13.1.0-psv.1`; catalog content otherwise unchanged (Git-install tags stay at `13.1.0` — git installs aren't signature-checked).
